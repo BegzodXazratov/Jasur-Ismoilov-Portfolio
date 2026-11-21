@@ -4,201 +4,358 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jasur Ismoilov — kontentmaker, Reels va Instagram kontent, Toshkent</title>
-<meta name="description" content="Jasur Ismoilov — Toshkentdagi kontentmaker. Bizneslar uchun Reels: g'oya, ssenariy, kadrda boshlovchi, suratga olish va montaj. Qo'yliq savdo majmuasi akkaunti 2,5 oyda 3 161 obunachi.">
+<meta name="description" content="Jasur Ismoilov — Toshkentdagi kontentmaker. Bizneslar uchun Reels: g'oya, ssenariy, kadrda boshlovchi, suratga olish va montaj.">
 <meta property="og:title" content="Jasur Ismoilov — kontentmaker">
-<meta property="og:description" content="Bizneslar uchun Reels va Instagram kontent. Ishlar, natijalar va xizmatlar.">
-<meta property="og:image" content="img/w5.webp">
+<meta property="og:description" content="Bizneslar uchun Reels va Instagram kontent. Ishlar va natijalar.">
+<meta property="og:image" content="img/jasur-portret.webp">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F3EFE7;--surface:#FFFFFF;--ink:#15120F;--muted:#5E574F;--line:#DDD5C8;--accent:#A8261C;--accent-ink:#FFFFFF;--r:14px}
+:root{
+  --bg:#121417;--bg2:#181b1f;--panel:rgba(255,255,255,.035);--line:rgba(255,255,255,.10);--line2:rgba(255,255,255,.16);
+  --ink:#EDEEF0;--muted:#9A9FA7;--dim:#6E737B;
+  --silver:linear-gradient(180deg,#FFFFFF 0%,#D9DCE1 38%,#9EA3AB 62%,#E6E8EB 100%);
+  --metal:linear-gradient(100deg,#8D9299 0%,#E9EBEE 35%,#B9BDC3 55%,#F4F5F6 75%,#9CA1A8 100%);
+  --r:14px;--disp:Anton,"Arial Narrow",Impact,sans-serif;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font:17px/1.55 "Golos Text",system-ui,sans-serif;overflow-x:hidden}
+body{background:radial-gradient(1200px 700px at 72% -10%,#2a2e34 0%,rgba(18,20,23,0) 60%),var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;overflow-x:hidden}
 img{display:block;max-width:100%}
-a{color:inherit}
-.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:99}
+a{color:inherit;text-decoration:none}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:#000;padding:10px 16px;border-radius:8px;z-index:99}
 .skip:focus{left:8px}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
-h1,h2,h3{font-family:Unbounded,system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.08}
-h1{font-size:clamp(2.2rem,5.6vw,4.6rem)}
-h2{font-size:clamp(1.7rem,3.4vw,2.8rem);margin-bottom:.6em}
-h3{font-size:1.15rem;font-weight:500;margin-bottom:.4em}
-p{max-width:62ch}
-.muted{color:var(--muted)}
-.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
-section{min-height:calc(var(--h,1) * 100svh);padding:110px 0 72px;display:flex;align-items:flex-start;scroll-margin-top:0}
-section>.wrap{width:min(1200px,100% - 48px)}
-.band{background:var(--ink);color:#F3EFE7}
-.band .muted{color:#B9B0A4}
+:focus-visible{outline:2px solid #fff;outline-offset:3px;border-radius:6px}
+.wrap{width:min(1240px,100% - 56px);margin-inline:auto}
+.label{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.silver{background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent}
 
 /* nav */
-.nav{position:fixed;inset:0 0 auto;z-index:50;background:rgba(243,239,231,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
-.logo{font-family:Unbounded,system-ui,sans-serif;font-weight:700;text-decoration:none;font-size:1.05rem}
-.logo span{color:var(--accent)}
-.nav ul{display:flex;gap:26px;list-style:none}
-.nav ul a{text-decoration:none;font-weight:500;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .25s}
-.nav ul a:hover{background-size:100% 2px}
-
-/* buttons */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink);transition:transform .18s,background .18s,color .18s}
-.btn:hover{transform:translateY(-2px)}
-.btn:active{transform:translateY(1px)}
-.btn-p{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-.btn-p:hover{background:#8E1E16;border-color:#8E1E16}
-.btn-s{background:transparent;color:var(--ink)}
-.btn-s:hover{background:var(--ink);color:var(--bg)}
-.band .btn-s{color:#F3EFE7;border-color:#F3EFE7}
-.band .btn-s:hover{background:#F3EFE7;color:var(--ink)}
-.nav .btn{min-height:44px;padding:0 20px;font-size:.95rem}
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.scrolled{background:rgba(18,20,23,.78);backdrop-filter:blur(14px);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.mono{font-family:var(--disp);font-size:1.7rem;letter-spacing:.02em}
+.nav ul{display:flex;gap:40px;list-style:none}
+.nav ul a{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#C9CCD1;transition:color .2s}
+.nav ul a:hover{color:#fff}
+.pill{display:inline-flex;align-items:center;gap:10px;height:42px;padding:0 20px;border-radius:999px;background:var(--metal);color:#16181b;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;transition:transform .2s,filter .2s}
+.pill:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.arr{width:12px;height:12px}
 
 /* hero */
-#bosh{align-items:center;padding-top:96px}
-.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
-.eyebrow{font-weight:600;color:var(--accent);margin-bottom:18px}
-.hero p.sub{font-size:1.15rem;margin:22px 0 30px;color:var(--muted)}
-.actions{display:flex;gap:14px;flex-wrap:wrap}
-.facts{display:flex;gap:36px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);flex-wrap:wrap}
-.facts b{display:block;font-family:Unbounded,system-ui,sans-serif;font-size:1.6rem}
-.facts span{color:var(--muted);font-size:.95rem}
-.portrait{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#2a2622;max-height:76svh;margin-left:auto}
-.portrait img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
-.portrait:hover img{transform:scale(1.02)}
-.in{opacity:0;transform:translateY(24px);animation:in .9s cubic-bezier(.2,.7,.2,1) forwards}
-.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}.d4{animation-delay:.55s}
-@keyframes in{to{opacity:1;transform:none}}
+.hero{position:relative;min-height:100svh;padding-top:110px;overflow:hidden}
+.hero .wrap{position:relative;min-height:calc(100svh - 110px);display:flex;flex-direction:column;justify-content:center;padding-bottom:60px}
+.hero-txt{position:relative;z-index:3;max-width:720px}
+.hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(4.6rem,13.5vw,12.6rem);line-height:.86;letter-spacing:-.005em;text-transform:uppercase;margin:18px 0 26px}
+.hero h1 span{display:block}
+.hero p.sub{color:#C3C6CB;max-width:430px;font-size:1.02rem}
+.hero .acts{display:flex;align-items:center;gap:30px;margin-top:34px;flex-wrap:wrap}
+.btn-metal{display:inline-flex;align-items:center;gap:12px;height:50px;padding:0 24px;background:var(--metal);color:#15171a;font-size:.74rem;letter-spacing:.15em;text-transform:uppercase;font-weight:600;border-radius:4px;transition:transform .2s,filter .2s;box-shadow:0 10px 30px rgba(0,0,0,.35)}
+.btn-metal:hover{transform:translateY(-2px);filter:brightness(1.07)}
+.btn-metal:active{transform:translateY(1px)}
+.btn-line{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;letter-spacing:.15em;text-transform:uppercase;color:#D6D8DC;font-weight:500;padding:12px 0;background:linear-gradient(#fff,#fff) 0 100%/0 1px no-repeat;transition:background-size .3s}
+.btn-line:hover{background-size:100% 1px}
+.photo{position:absolute;right:-5%;bottom:0;height:min(100%,980px);z-index:2;pointer-events:none}
+.photo img{height:100%;width:auto;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%);mask-image:linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%)}
+.glow{position:absolute;right:6%;top:12%;width:min(56vw,760px);aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(205,212,222,.20),rgba(205,212,222,.06) 55%,transparent 75%);z-index:1}
+.arc{position:absolute;right:3%;top:16%;width:min(46vw,640px);aspect-ratio:1;border-radius:50%;border:1px solid rgba(255,255,255,.18);border-left-color:transparent;border-bottom-color:transparent;transform:rotate(18deg);z-index:1}
+.spark{position:absolute;z-index:3;width:22px;height:22px;color:#fff;opacity:.9}
+.s1{right:9%;top:38%}
+.s2{left:47%;top:20%;width:14px;height:14px;opacity:.5}
+.avail{position:absolute;right:0;bottom:130px;z-index:5;text-align:right;text-shadow:0 2px 20px rgba(0,0,0,.6)}
+.avail b{display:block;font-family:var(--disp);font-weight:400;font-size:2.4rem;line-height:1;margin:8px 0 6px;letter-spacing:.01em}
+.avail a{display:inline-flex;gap:8px;align-items:center}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:160px;background:linear-gradient(transparent,var(--bg));z-index:2;pointer-events:none}
 
-/* works */
-.works{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.work{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;text-decoration:none;transition:transform .2s,box-shadow .2s}
-.work:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(21,18,15,.10)}
-.work .pics{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:#111}
-.work .pics img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .4s}
-.work:hover .pics img{transform:scale(1.03)}
-.work .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
-.work p{color:var(--muted);font-size:.98rem}
-.work .nums{display:flex;gap:22px;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
-.work .nums b{font-family:Unbounded,system-ui,sans-serif;font-size:1.35rem;display:block}
-.work .nums span{color:var(--muted);font-size:.88rem}
-.work .go{font-weight:600;font-size:.95rem}
+/* blocks */
+.block{padding:30px 0}
+.panel{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:var(--r);backdrop-filter:blur(6px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{text-align:center;padding:36px 16px 32px;position:relative}
+.stat+.stat::before{content:"";position:absolute;left:0;top:22%;bottom:22%;width:1px;background:var(--line2)}
+.stat svg{width:26px;height:26px;color:#D7DADF;margin:0 auto 14px}
+.stat b{display:block;font-family:Inter;font-weight:400;font-size:clamp(2.2rem,4vw,3.2rem);letter-spacing:-.02em;line-height:1.05;margin-bottom:10px}
+.head{display:flex;justify-content:space-between;align-items:center;margin:58px 0 18px}
+.head a{display:inline-flex;gap:10px;align-items:center}
+.head a:hover{color:#fff}
+
+.works{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.work{position:relative;aspect-ratio:4/3.3;border-radius:var(--r);overflow:hidden;border:1px solid var(--line2);background:#0d0e10;display:block}
+.work img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.35) brightness(.62) contrast(1.05);transition:transform .6s,filter .4s}
+.work:hover img{transform:scale(1.03);filter:grayscale(.1) brightness(.72)}
+.work::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,11,13,.92) 0%,rgba(10,11,13,.55) 55%,rgba(10,11,13,.15) 100%)}
+.work .in{position:absolute;inset:0;z-index:2;padding:26px;display:flex;flex-direction:column;justify-content:flex-end}
+.work .top{position:absolute;top:22px;left:26px;right:26px;display:flex;justify-content:space-between}
+.work h3{font-family:Inter;font-weight:500;font-size:clamp(1.5rem,2.2vw,2rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
+.work .tags{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#B5B9BF;line-height:1.9}
+.circ{position:absolute;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.55);display:grid;place-items:center;transition:background .25s,color .25s}
+.work:hover .circ{background:#fff;color:#111}
+.num{font-family:var(--disp);font-size:1.6rem;line-height:1}
+
+.two{display:grid;grid-template-columns:1.12fr .88fr;gap:28px;margin-top:58px}
+.caps h2,.side h2{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--line);font-weight:500}
+.capgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px 34px;padding-right:28px;border-right:1px solid var(--line)}
+.cap{display:grid;grid-template-columns:40px 1fr;gap:14px}
+.cap svg{width:30px;height:30px;color:#D7DADF}
+.cap h3{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+.cap p{font-size:.86rem;color:var(--muted);line-height:1.5}
+.side .panel{padding:8px 18px}
+.row{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.ico{width:38px;height:38px;border-radius:8px;border:1px solid var(--line2);display:grid;place-items:center;flex:none;font-family:var(--disp);font-size:1rem;background:rgba(255,255,255,.04)}
+.row b{display:block;font-weight:500;font-size:.92rem}
+.row span{font-size:.8rem;color:var(--muted)}
+.fmts{display:flex;flex-wrap:wrap;gap:8px;padding:16px 0}
+.fmts li{list-style:none;border:1px solid var(--line2);border-radius:999px;padding:7px 14px;font-size:.8rem;color:#CDD0D4;background:rgba(255,255,255,.03)}
+
+.steps{display:grid;grid-template-columns:repeat(5,1fr);padding:26px 10px}
+.step{padding:0 18px;position:relative}
+.step+.step::before{content:"";position:absolute;left:-14px;top:9px;width:28px;border-top:1px dashed rgba(255,255,255,.3)}
+.step .t{display:flex;gap:10px;align-items:baseline;margin-bottom:8px}
+.step .t i{font-style:normal;color:var(--dim);font-size:.8rem}
+.step .t b{font-size:.76rem;letter-spacing:.15em;text-transform:uppercase;font-weight:600}
+.step p{font-size:.84rem;color:var(--muted);margin-bottom:16px}
+.step svg{width:26px;height:26px;color:#D7DADF}
 
 /* contact */
-#aloqa{align-items:center}
-.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end}
-.contact h2{font-size:clamp(2rem,5vw,4rem)}
-.chips{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 30px;list-style:none}
-.chips li{border:1px solid #3A332C;border-radius:999px;padding:8px 16px;font-size:.95rem}
-.clist{display:grid;gap:14px}
-.clist a{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid #3A332C;text-decoration:none;font-weight:500;min-height:44px}
-.clist a:hover span:last-child{transform:translateX(4px)}
-.clist span:last-child{transition:transform .2s}
-.foot{margin-top:60px;padding-top:22px;border-top:1px solid #3A332C;font-size:.9rem;color:#B9B0A4}
+.cta{display:grid;grid-template-columns:1.25fr 1fr .9fr;align-items:center;gap:30px;padding:40px;margin-top:58px;border-radius:var(--r);border:1px solid var(--line2);position:relative;overflow:hidden;background:linear-gradient(110deg,#1f2226 0%,#3a3e45 18%,#a7acb3 34%,#40444a 50%,#1d2024 72%,#17191c 100%)}
+.cta::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,20,23,.35),rgba(18,20,23,0) 35%,rgba(18,20,23,.2) 55%,rgba(18,20,23,.5));pointer-events:none}
+.cta>*{position:relative}
+.cta h2{font-family:var(--disp);font-weight:400;font-size:clamp(2.6rem,4.4vw,3.8rem);line-height:.95;text-transform:uppercase;background:var(--silver);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cta .mid p{color:#E1E3E6;margin-bottom:20px;font-size:.98rem}
+.cta .contacts{border-left:1px solid var(--line2);padding-left:30px;display:grid;gap:14px}
+.cta .contacts a{display:flex;align-items:center;gap:12px;font-size:.92rem;color:#E4E6E9;min-height:30px}
+.cta .contacts a:hover{color:#fff}
+.cta .contacts svg{width:18px;height:18px;flex:none}
+.cta .spark{position:absolute;left:36%;top:22%;width:24px;height:24px}
+footer{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:30px 0 40px;font-size:.78rem;color:var(--dim);flex-wrap:wrap}
+footer .soc{display:flex;align-items:center;gap:16px}
+footer .soc a{width:36px;height:36px;border:1px solid var(--line2);border-radius:8px;display:grid;place-items:center;color:#D7DADF;transition:background .2s,color .2s}
+footer .soc a:hover{background:#fff;color:#111}
+footer .soc svg{width:16px;height:16px}
+
+/* motion */
+.rise{opacity:0;transform:translateY(22px);animation:rise 1s cubic-bezier(.2,.7,.2,1) forwards}
+.r1{animation-delay:.1s}.r2{animation-delay:.25s}.r3{animation-delay:.4s}.r4{animation-delay:.55s}
+.photo.rise{transform:translateY(30px);animation-duration:1.4s}
+@keyframes rise{to{opacity:1;transform:none}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s}
+.reveal.on{opacity:1;transform:none}
 
 .bar{display:none}
 @media (max-width:1024px){
-  .hero,.contact{grid-template-columns:1fr}
-  .portrait{max-width:420px;margin:0;grid-row:1;max-height:none}
-  .works{grid-template-columns:1fr 1fr}
   .nav ul{display:none}
+  .photo{right:-8%;height:90%}
+  .s1{right:3%;top:30%}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3)::before{display:none}
+  .works{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+  .capgrid{border-right:0;padding-right:0}
+  .steps{grid-template-columns:1fr 1fr 1fr;row-gap:26px}
+  .step+.step::before{display:none}
+  .cta{grid-template-columns:1fr 1fr}
+  .cta .contacts{grid-column:1/-1;border-left:0;padding-left:0;border-top:1px solid var(--line2);padding-top:22px;grid-template-columns:1fr 1fr}
 }
 @media (max-width:640px){
-  section{min-height:calc(var(--h,1) * 100lvh);padding:92px 0 64px}
-  .wrap,section>.wrap{width:calc(100% - 36px)}
-  .nav .btn{display:none}
-  .hero{gap:28px}
-  .portrait{max-width:none;aspect-ratio:1/1}
-  .portrait img{object-position:center 20%}
+  .wrap{width:calc(100% - 36px)}
+  .nav .pill{display:none}
+  .hero{padding-top:84px}
+  .hero .wrap{justify-content:flex-start;min-height:auto;padding-top:0;padding-bottom:30px}
+  .photo{position:relative;right:auto;height:auto;width:112%;margin:-10px -6% 0;order:-1}
+  .photo img{width:100%;height:auto}
+  .glow{right:-20%;top:4%;width:120vw}
+  .arc{right:-10%;top:6%;width:96vw}
+  .s1{right:8%;top:30%}.s2{display:none}
+  .hero-txt{margin-top:-120px}
+  .hero h1{font-size:clamp(4.2rem,24vw,7rem);margin:10px 0 18px}
+  .hero::after{display:none}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat{padding:26px 10px}
+  .stat b{font-size:2rem}
   .works{grid-template-columns:1fr}
-  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-  .facts b{font-size:1.25rem}
-  .facts span{font-size:.82rem;line-height:1.3;display:block}
-  .actions .btn{flex:1 1 100%}
+  .capgrid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .step{padding:0 8px}
+  .cta{grid-template-columns:1fr;padding:28px 22px}
+  .cta .contacts{grid-template-columns:1fr}
+  .cta .spark{left:auto;right:24px;top:28px}
+  .head{flex-direction:column;align-items:flex-start;gap:8px}
   .bar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}
-  .bar .btn{flex:1;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-  body{padding-bottom:84px}
+  .bar a{flex:1;justify-content:center}
+  body{padding-bottom:78px}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
-  .in{opacity:1;transform:none}
+  .rise,.reveal{opacity:1;transform:none}
   html{scroll-behavior:auto}
 }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arr" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v14m-6-6 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 0c.6 6.6 5.4 11.4 12 12-6.6.6-11.4 5.4-12 12-.6-6.6-5.4-11.4-12-12C6.6 11.4 11.4 6.6 12 0Z" fill="currentColor"/></symbol>
+    <symbol id="i-tg" viewBox="0 0 24 24"><path d="M21.5 4.2 2.9 11.4c-1 .4-1 1.6.1 1.9l4.7 1.5 1.8 5.6c.3.8 1.3 1 1.9.4l2.6-2.5 4.9 3.6c.8.5 1.8.1 2-.8l3-14.7c.3-1.2-.9-2.1-2-1.6Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="m7.7 14.8 9.6-6.3-7 7.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></symbol>
+  </defs>
+</svg>
 <a class="skip" href="#main">Asosiy qismga o'tish</a>
-<header class="nav">
+
+<header class="nav" id="nav">
   <div class="wrap">
-    <a class="logo" href="#bosh">Jasur<span>.</span>Ismoilov</a>
+    <a class="mono" href="#bosh" aria-label="Bosh sahifa">JI</a>
     <nav aria-label="Asosiy menyu"><ul>
       <li><a href="#ishlar">Ishlar</a></li>
+      <li><a href="#xizmatlar">Xizmatlar</a></li>
+      <li><a href="#jarayon">Jarayon</a></li>
       <li><a href="#aloqa">Aloqa</a></li>
     </ul></nav>
-    <a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a>
+    <a class="pill" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Bog'lanish <svg class="arr"><use href="#i-arr"/></svg></a>
   </div>
 </header>
+
 <main id="main">
 
-<section id="bosh" style="--h:1">
-  <div class="wrap hero">
-    <div>
-      <p class="eyebrow in">Jasur Ismoilov, 24 yosh</p>
-      <h1 class="in d1">Reels kontentmaker, Toshkent</h1>
-      <p class="sub in d2">Bizneslar uchun Reels qilaman: g'oya, ssenariy, kadrda boshlovchilik, suratga olish va montaj. Shaxsiy kitob blogimni 20 mingdan ortiq obunachiga yetkazganman.</p>
-      <div class="actions in d3">
-        <a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a>
-        <a class="btn btn-s" href="#ishlar">Ishlarni ko'rish</a>
-      </div>
-      <div class="facts in d4">
-        <div><b>3 161</b><span>obunachi, Qo'yliq, 2,5 oy</span></div>
-        <div><b>20.2K</b><span>shaxsiy blog</span></div>
-        <div><b>197</b><span>post, Fanlar akademiyasi</span></div>
+<section class="hero" id="bosh">
+  <div class="glow" aria-hidden="true"></div>
+  <div class="arc" aria-hidden="true"></div>
+  <svg class="spark s1" aria-hidden="true"><use href="#i-spark"/></svg>
+  <svg class="spark s2" aria-hidden="true"><use href="#i-spark"/></svg>
+  <div class="wrap">
+    <div class="photo rise r2"><img src="img/jasur-hero.webp" alt="Jasur Ismoilov" width="1100" height="1466" fetchpriority="high"></div>
+    <div class="hero-txt">
+      <p class="label rise">Jasur Ismoilov · Toshkent · Reels va Instagram</p>
+      <h1 class="silver rise r1"><span>Kontent</span><span>maker</span></h1>
+      <p class="sub rise r2">Bizneslar uchun Reels qilaman: g'oya, ssenariy, kadrda boshlovchilik, suratga olish va montaj. Shaxsiy blogimni 20 mingdan ortiq obunachiga yetkazganman.</p>
+      <div class="acts rise r3">
+        <a class="btn-metal" href="#ishlar">Ishlarni ko'rish <svg class="arr"><use href="#i-arr"/></svg></a>
+        <a class="btn-line" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Telegramda yozish <svg class="arr"><use href="#i-arr"/></svg></a>
       </div>
     </div>
-    <div class="portrait in d2"><img src="img/jasur-portret.webp" alt="Jasur Ismoilov portreti"></div>
   </div>
 </section>
 
-<section id="ishlar" style="--h:1">
-  <div class="wrap">
-    <h2>Ishlar va natijalar</h2>
+<div class="wrap">
+
+  <section class="block reveal" aria-label="Raqamlar">
+    <div class="panel stats">
+      <div class="stat"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg><b>20.2K</b><span class="label">Blog obunachilari</span></div>
+      <div class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><b>3 161</b><span class="label">Qo'yliq · 2,5 oyda</span></div>
+      <div class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20.5s-8-4.7-8-10.4A4.4 4.4 0 0 1 12 7.6a4.4 4.4 0 0 1 8 2.5c0 5.7-8 10.4-8 10.4Z"/></svg><b>1 802</b><span class="label">Layk bitta Reelsda</span></div>
+      <div class="stat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><b>197</b><span class="label">Post · Fanlar akademiyasi</span></div>
+    </div>
+  </section>
+
+  <section id="ishlar" class="reveal">
+    <div class="head"><h2 class="label" style="color:#D7DADF">Tanlangan ishlar</h2><a class="label" href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener">Barcha ishlar Instagramda <svg class="arr"><use href="#i-arr"/></svg></a></div>
     <div class="works">
       <a class="work" href="https://www.instagram.com/qoyliq_universalsavdo/" target="_blank" rel="noopener">
-        <div class="pics"><img src="img/w5.webp" alt="Sotuvchi bilan intervyu" loading="lazy"><img src="img/w1.webp" alt="Qo'yliq bozori tarixi Reels" loading="lazy"><img src="img/w3.webp" alt="1 802 layk olgan Reels" loading="lazy"></div>
-        <div class="body"><h3>Qo'yliq savdo majmuasi</h3><p>700+ do'konli savdo majmuasi sahifasi. Sotuvchilar bilan intervyu, bozor tarixi, kadrda boshlovchi.</p><div class="nums"><div><b>3 161</b><span>obunachi</span></div><div><b>2,5 oy</b><span>ish muddati</span></div></div><span class="go">Sahifani ochish ↗</span></div>
+        <img src="img/w5.webp" alt="" loading="lazy">
+        <div class="in">
+          <div class="top"><span class="label">Savdo majmuasi</span><span class="num silver">01</span></div>
+          <h3>Qo'yliq<br>savdo majmuasi</h3>
+          <div class="tags">3 161 obunachi · 2,5 oy<br>Intervyu · Kadrda boshlovchi</div>
+        </div>
+        <span class="circ" aria-hidden="true"><svg class="arr" style="width:16px;height:16px"><use href="#i-arr"/></svg></span>
       </a>
       <a class="work" href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener">
-        <div class="pics"><img src="img/w6.webp" alt="Kameraga gapirayotgan Reels" loading="lazy"><img src="img/w7.webp" alt="Jontemir she'ri Reels" loading="lazy"><img src="img/w9.webp" alt="Anvar Obidjon g'azali Reels" loading="lazy"></div>
-        <div class="body"><h3>Shaxsiy blog: ismoiliy_</h3><p>Kitob va san'at haqidagi blog. She'rlar, kitoblar va o'z hikoyalarim asosidagi Reels.</p><div class="nums"><div><b>20.2K</b><span>obunachi</span></div><div><b>97</b><span>post</span></div></div><span class="go">Sahifani ochish ↗</span></div>
+        <img src="img/w6.webp" alt="" loading="lazy">
+        <div class="in">
+          <div class="top"><span class="label">Shaxsiy brend</span><span class="num silver">02</span></div>
+          <h3>Kitob blogi<br>ismoiliy_</h3>
+          <div class="tags">20.2K obunachi · 97 post<br>Hikoya · She'r · Kitob</div>
+        </div>
+        <span class="circ" aria-hidden="true"><svg class="arr" style="width:16px;height:16px"><use href="#i-arr"/></svg></span>
       </a>
       <a class="work" href="https://www.instagram.com/fanlar_akademiyasi/" target="_blank" rel="noopener">
-        <div class="pics"><img src="img/w10.webp" alt="Haftalik yangiliklar anonsi" loading="lazy"><img src="img/w11.webp" alt="Amudaryo haqidagi Reels" loading="lazy"><img src="img/w13.webp" alt="Olima bilan suhbat" loading="lazy"></div>
-        <div class="body"><h3>O'zbekiston Fanlar akademiyasi</h3><p>Rasmiy davlat akkaunti: haftalik yangiliklar, olimlar bilan suhbatlar, ilmiy faktlar.</p><div class="nums"><div><b>197</b><span>post</span></div><div><b>2 716</b><span>obunachi</span></div></div><span class="go">Sahifani ochish ↗</span></div>
+        <img src="img/w11.webp" alt="" loading="lazy">
+        <div class="in">
+          <div class="top"><span class="label">Davlat tashkiloti</span><span class="num silver">03</span></div>
+          <h3>O'zbekiston<br>Fanlar akademiyasi</h3>
+          <div class="tags">Rasmiy akkaunt · 197 post<br>Anons · Suhbat · Ilmiy fakt</div>
+        </div>
+        <span class="circ" aria-hidden="true"><svg class="arr" style="width:16px;height:16px"><use href="#i-arr"/></svg></span>
       </a>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="aloqa" class="band" style="--h:1">
-  <div class="wrap">
-    <div class="contact">
-      <div>
-        <h2>Akkauntingiz uchun Reels</h2>
-        <ul class="chips"><li>Kontent reja va ssenariy</li><li>Suratga olish</li><li>Kadrda boshlovchi</li><li>Montaj</li><li>Akkaunt yuritish</li></ul>
-        <a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a>
-      </div>
-      <div class="clist">
-        <a href="https://t.me/telbamishkin" target="_blank" rel="noopener"><span>Telegram: @telbamishkin</span><span>↗</span></a>
-        <a href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener"><span>Instagram: @ismoiliy_</span><span>↗</span></a>
+  <section id="xizmatlar" class="two reveal">
+    <div class="caps">
+      <h2 class="label" style="color:#D7DADF">Xizmatlar</h2>
+      <div class="capgrid">
+        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z"/></svg><div><h3>G'oya va ssenariy</h3><p>Biznesingizga mos oylik kontent reja va har bir Reels uchun ssenariy.</p></div></div>
+        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg><div><h3>Suratga olish</h3><p>Do'kon, ofis yoki ko'chada vertikal 9:16 formatda suratga olish.</p></div></div>
+        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><div><h3>Kadrda boshlovchi</h3><p>Brend nomidan kameraga gapiraman, sotuvchi va mijozlardan intervyu olaman.</p></div></div>
+        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg><div><h3>Montaj</h3><p>Dinamik montaj, subtitr, musiqa va brend uslubi. 30-60 soniya.</p></div></div>
+        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><div><h3>Akkaunt yuritish</h3><p>Joylash jadvali, matnlar va sahifaning yagona ko'rinishi.</p></div></div>
+        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><h3>Oylik hisobot</h3><p>Obunachi va qamrov o'sishi, qaysi Reels ishlagani.</p></div></div>
       </div>
     </div>
-    <div class="foot">© 2026 Jasur Ismoilov</div>
-  </div>
-</section>
+    <div class="side">
+      <h2 class="label" style="color:#D7DADF">Hamkorlik</h2>
+      <div class="panel">
+        <div class="row"><span class="ico">Q</span><div><b>Qo'yliq universal savdo majmuasi</b><span>Instagram sahifasi · Toshkent</span></div></div>
+        <div class="row"><span class="ico">FA</span><div><b>O'zbekiston Fanlar akademiyasi</b><span>Rasmiy Instagram akkaunti</span></div></div>
+        <div class="row"><span class="ico">T</span><div><b>TASMA Production</b><span>Kontentmakerlar jamoasi</span></div></div>
+      </div>
+      <h2 class="label" style="color:#D7DADF;margin-top:26px;border:0;padding:0;margin-bottom:0">Formatlar</h2>
+      <ul class="fmts"><li>Reels 9:16</li><li>Intervyu</li><li>Ko'cha so'rovi</li><li>Hikoya</li><li>Anons</li><li>Ekspert video</li></ul>
+    </div>
+  </section>
 
+  <section id="jarayon" class="reveal">
+    <div class="head"><h2 class="label" style="color:#D7DADF">Ish jarayoni</h2></div>
+    <div class="panel steps">
+      <div class="step"><div class="t"><i>01</i><b>Tanishuv</b></div><p>Biznes, mahsulot va akkaunt tahlili.</p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg></div>
+      <div class="step"><div class="t"><i>02</i><b>Reja</b></div><p>Oylik kontent reja va ssenariylar.</p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".8" fill="currentColor"/></svg></div>
+      <div class="step"><div class="t"><i>03</i><b>Suratga olish</b></div><p>Bir-ikki kunda oylik material.</p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></div>
+      <div class="step"><div class="t"><i>04</i><b>Montaj</b></div><p>Tayyor Reels, sizning tasdig'ingiz bilan.</p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+      <div class="step"><div class="t"><i>05</i><b>Natija</b></div><p>Joylash va oy oxirida hisobot.</p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 15c-1.5 1.3-2 5-2 5s3.7-.5 5-2M14.5 4.5C17 2 21 3 21 3s1 4-1.5 6.5L13 16l-5-5 6.5-6.5Z"/><circle cx="15.5" cy="8.5" r="1.3"/></svg></div>
+    </div>
+  </section>
+
+  <section id="aloqa" class="cta reveal">
+    <svg class="spark" aria-hidden="true"><use href="#i-spark"/></svg>
+    <h2>Keling,<br>birga kontent<br>qilamiz</h2>
+    <div class="mid">
+      <p>Yangi loyihalar uchun ochiqman. Biznesingiz haqida yozing, birinchi oy uchun g'oyalar va narxni aytaman.</p>
+      <a class="btn-metal" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Telegramda yozish <svg class="arr"><use href="#i-arr"/></svg></a>
+    </div>
+    <div class="contacts">
+      <a href="https://t.me/telbamishkin" target="_blank" rel="noopener"><svg><use href="#i-tg"/></svg>@telbamishkin</a>
+      <a href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>@ismoiliy_</a>
+      <a href="#bosh"><svg><use href="#i-pin"/></svg>Toshkent</a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Jasur Ismoilov</span>
+    <div class="soc"><span class="label">Bog'lanish</span>
+      <a href="https://t.me/telbamishkin" target="_blank" rel="noopener" aria-label="Telegram"><svg><use href="#i-tg"/></svg></a>
+      <a href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"/></svg></a>
+    </div>
+  </footer>
+</div>
 </main>
-<div class="bar"><a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a></div>
+
+<div class="bar"><a class="btn-metal" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Telegramda yozish <svg class="arr"><use href="#i-arr"/></svg></a></div>
+
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  function s(){nav.classList.toggle('scrolled',scrollY>20)}
+  addEventListener('scroll',s,{passive:true});s();
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('on')});return}
+  var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
 </body>
 </html>
