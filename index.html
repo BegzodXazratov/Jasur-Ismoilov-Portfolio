@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jasur Ismoilov — kontentmaker, Reels va Instagram kontent, Toshkent</title>
+<meta name="description" content="Jasur Ismoilov — Toshkentdagi kontentmaker. Bizneslar uchun Reels: g'oya, ssenariy, kadrda boshlovchi, suratga olish va montaj. Qo'yliq savdo majmuasi akkaunti 2,5 oyda 3 161 obunachi.">
+<meta property="og:title" content="Jasur Ismoilov — kontentmaker">
+<meta property="og:description" content="Bizneslar uchun Reels va Instagram kontent. Ishlar, natijalar va xizmatlar.">
+<meta property="og:image" content="img/w5.webp">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3EFE7;--surface:#FFFFFF;--ink:#15120F;--muted:#5E574F;--line:#DDD5C8;--accent:#A8261C;--accent-ink:#FFFFFF;--r:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:17px/1.55 "Golos Text",system-ui,sans-serif;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:8px;z-index:99}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:Unbounded,system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;line-height:1.08}
+h1{font-size:clamp(2.2rem,5.6vw,4.6rem)}
+h2{font-size:clamp(1.7rem,3.4vw,2.8rem);margin-bottom:.6em}
+h3{font-size:1.15rem;font-weight:500;margin-bottom:.4em}
+p{max-width:62ch}
+.muted{color:var(--muted)}
+.wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+section{min-height:calc(var(--h,1) * 100svh);padding:110px 0 72px;display:flex;align-items:flex-start;scroll-margin-top:0}
+section>.wrap{width:min(1200px,100% - 48px)}
+.band{background:var(--ink);color:#F3EFE7}
+.band .muted{color:#B9B0A4}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;background:rgba(243,239,231,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:20px}
+.logo{font-family:Unbounded,system-ui,sans-serif;font-weight:700;text-decoration:none;font-size:1.05rem}
+.logo span{color:var(--accent)}
+.nav ul{display:flex;gap:26px;list-style:none}
+.nav ul a{text-decoration:none;font-weight:500;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .25s}
+.nav ul a:hover{background-size:100% 2px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid var(--ink);transition:transform .18s,background .18s,color .18s}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(1px)}
+.btn-p{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn-p:hover{background:#8E1E16;border-color:#8E1E16}
+.btn-s{background:transparent;color:var(--ink)}
+.btn-s:hover{background:var(--ink);color:var(--bg)}
+.band .btn-s{color:#F3EFE7;border-color:#F3EFE7}
+.band .btn-s:hover{background:#F3EFE7;color:var(--ink)}
+.nav .btn{min-height:44px;padding:0 20px;font-size:.95rem}
+
+/* hero */
+#bosh{align-items:center;padding-top:96px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.eyebrow{font-weight:600;color:var(--accent);margin-bottom:18px;display:flex;align-items:center;gap:12px}
+.eyebrow img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.hero p.sub{font-size:1.15rem;margin:22px 0 30px;color:var(--muted)}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.facts{display:flex;gap:28px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);flex-wrap:wrap}
+.facts b{display:block;font-family:Unbounded,system-ui,sans-serif;font-size:1.6rem}
+.facts span{color:var(--muted);font-size:.95rem}
+.collage{position:relative;height:min(600px,70svh)}
+.collage figure{position:absolute;border-radius:var(--r);overflow:hidden;box-shadow:0 20px 50px rgba(21,18,15,.18);background:#222}
+.collage img{width:100%;height:100%;object-fit:cover}
+.c1{width:52%;aspect-ratio:3/4;left:0;top:6%;z-index:2}
+.c2{width:46%;aspect-ratio:3/4;right:0;top:0}
+.c3{width:44%;aspect-ratio:3/4;right:8%;bottom:0;z-index:3}
+.in{opacity:0;transform:translateY(24px);animation:in .9s cubic-bezier(.2,.7,.2,1) forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}.d4{animation-delay:.55s}
+@keyframes in{to{opacity:1;transform:none}}
+
+/* case */
+.case-head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:34px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 34px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
+.band .stat{background:#221E1A;border-color:#3A332C}
+.stat b{font-family:Unbounded,system-ui,sans-serif;font-size:clamp(1.6rem,3vw,2.4rem);display:block;line-height:1.1}
+.stat span{color:var(--muted)}
+.band .stat span{color:#B9B0A4}
+.case-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:28px;align-items:start}
+.shot{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:#0c0c0c;aspect-ratio:16/10}
+.band .shot{border-color:#3A332C}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top center}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.thumbs.four{grid-template-columns:repeat(2,1fr)}
+.thumbs a{display:block;border-radius:10px;overflow:hidden;aspect-ratio:3/4;background:#222;transition:transform .2s}
+.thumbs a:hover{transform:translateY(-2px)}
+.thumbs img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.thumbs a:hover img{transform:scale(1.03)}
+.link{font-weight:600;text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/100% 2px no-repeat;padding-bottom:2px;transition:background-size .25s}
+.link:hover{background-size:40% 2px}
+ul.ticks{list-style:none;display:grid;gap:10px;margin-top:18px}
+ul.ticks li{padding-left:28px;position:relative}
+ul.ticks li::before{content:"";position:absolute;left:0;top:.55em;width:14px;height:2px;background:var(--accent)}
+
+/* blog moment */
+.big{font-family:Unbounded,system-ui,sans-serif;font-weight:700;font-size:clamp(5rem,19vw,17rem);line-height:.9;letter-spacing:-.05em;color:var(--accent);transform:scale(var(--s,.8));transform-origin:left center;transition:transform .1s linear;margin-bottom:24px}
+.blog{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.card .n{font-family:Unbounded,system-ui,sans-serif;color:var(--accent);font-size:.95rem;margin-bottom:22px;display:block}
+.card p{color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;counter-reset:s;border-top:2px solid var(--ink)}
+.steps li{list-style:none;padding:26px 22px 0 0;position:relative}
+.steps li::before{counter-increment:s;content:"0" counter(s);font-family:Unbounded,system-ui,sans-serif;font-size:2.2rem;color:var(--accent);display:block;margin-bottom:16px}
+.steps p{color:var(--muted);font-size:.98rem}
+
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:center}
+.portrait{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:#2a2622}
+.portrait img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.portrait:hover img{transform:scale(1.02)}
+.about p+p{margin-top:14px}
+
+/* contact */
+#aloqa{align-items:center}
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end}
+.contact h2{font-size:clamp(2rem,5vw,4rem)}
+.clist{display:grid;gap:14px}
+.clist a{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid #3A332C;text-decoration:none;font-weight:500;min-height:44px}
+.clist a:hover span:last-child{transform:translateX(4px)}
+.clist span:last-child{transition:transform .2s}
+.foot{margin-top:60px;padding-top:22px;border-top:1px solid #3A332C;font-size:.9rem;color:#B9B0A4;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* phone bar */
+.bar{display:none}
+@media (max-width:1024px){
+  .hero,.case-grid,.blog,.about,.contact{grid-template-columns:1fr}
+  .collage{height:440px;max-width:560px}
+  .cards{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr 1fr;row-gap:28px}
+  .nav ul{display:none}
+}
+@media (max-width:640px){
+  section{min-height:calc(var(--h,1) * 100lvh);padding:92px 0 64px}
+  .wrap,section>.wrap{width:calc(100% - 36px)}
+  .nav .btn{display:none}
+  .collage{height:min(380px,92vw)}
+  .stats{grid-template-columns:1fr;gap:10px}
+  .stat{padding:16px 18px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+  .case-head{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .steps li{padding-right:0}
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .facts b{font-size:1.25rem}
+  .facts span{font-size:.82rem;line-height:1.3;display:block}
+  .actions .btn{flex:1 1 100%}
+  .bar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60}
+  .bar .btn{flex:1;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+  body{padding-bottom:84px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .in{opacity:1;transform:none}
+  .big{transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Asosiy qismga o'tish</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#bosh">Jasur<span>.</span>Ismoilov</a>
+    <nav aria-label="Asosiy menyu"><ul>
+      <li><a href="#qoyliq">Natijalar</a></li>
+      <li><a href="#xizmatlar">Xizmatlar</a></li>
+      <li><a href="#jarayon">Ish jarayoni</a></li>
+      <li><a href="#haqida">Men haqimda</a></li>
+    </ul></nav>
+    <a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a>
+  </div>
+</header>
+
+<main id="main">
+
+<section id="bosh" style="--h:1">
+  <div class="wrap hero">
+    <div>
+      <p class="eyebrow in"><img src="img/jasur.webp" alt="Jasur Ismoilov portreti" width="44" height="44">Jasur Ismoilov, kontentmaker</p>
+      <h1 class="in d1">Biznes uchun Reels va Instagram kontent</h1>
+      <p class="sub in d2">G'oya va ssenariydan tortib suratga olish, kadrda boshlovchilik va montajgacha bitta odam qiladi. Akkauntingiz har hafta yangi Reels bilan to'ladi, siz biznesingiz bilan bandsiz.</p>
+      <div class="actions in d3">
+        <a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a>
+        <a class="btn btn-s" href="#qoyliq">Natijalarni ko'rish</a>
+      </div>
+      <div class="facts in d4">
+        <div><b>3 161</b><span>obunachi, Qo'yliq, 2,5 oy</span></div>
+        <div><b>20.2K</b><span>shaxsiy blog auditoriyasi</span></div>
+        <div><b>3</b><span>yo'nalish: savdo, ilm-fan, blog</span></div>
+      </div>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <figure class="c2 in d2"><img src="img/w1.webp" alt=""></figure>
+      <figure class="c1 in d1"><img src="img/w5.webp" alt=""></figure>
+      <figure class="c3 in d3"><img src="img/w10.webp" alt=""></figure>
+    </div>
+  </div>
+</section>
+
+<section id="qoyliq" style="--h:1">
+  <div class="wrap">
+    <div class="case-head">
+      <div>
+        <h2>Qo'yliq savdo majmuasi: 2,5 oylik natija</h2>
+        <p class="muted">Toshkentdagi 700 dan ortiq do'kon joylashgan savdo majmuasining Instagram sahifasi. Sotuvchilar bilan intervyular, bozor tarixi haqidagi Reels va kadrda o'zim boshlovchi sifatida.</p>
+      </div>
+      <a class="link" href="https://www.instagram.com/qoyliq_universalsavdo/" target="_blank" rel="noopener">Sahifani ochish ↗</a>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>3 161</b><span>obunachi</span></div>
+      <div class="stat"><b>47</b><span>post va Reels</span></div>
+      <div class="stat"><b>1 802</b><span>layk bitta Reelsda</span></div>
+    </div>
+    <div class="case-grid">
+      <div class="shot"><img src="img/qoyliq-profil.webp" alt="qoyliq_universalsavdo Instagram sahifasi: 47 post, 3 161 obunachi" loading="lazy"></div>
+      <div class="thumbs four">
+        <a href="https://www.instagram.com/qoyliq_universalsavdo/" target="_blank" rel="noopener"><img src="img/w0.webp" alt="Qo'yliq bozoridagi Reels kadri" loading="lazy"></a>
+        <a href="https://www.instagram.com/qoyliq_universalsavdo/" target="_blank" rel="noopener"><img src="img/w2.webp" alt="Kiyim do'konlari haqidagi Reels" loading="lazy"></a>
+        <a href="https://www.instagram.com/qoyliq_universalsavdo/" target="_blank" rel="noopener"><img src="img/w3.webp" alt="1 802 layk olgan tarixiy Reels" loading="lazy"></a>
+        <a href="https://www.instagram.com/qoyliq_universalsavdo/" target="_blank" rel="noopener"><img src="img/w4.webp" alt="Sotuvchi Ahror aka bilan intervyu" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="blog" class="band" style="--h:1">
+  <div class="wrap">
+    <h2>Shaxsiy blog: ismoiliy_</h2>
+    <div class="big" id="bignum" aria-hidden="true">20.2K</div>
+    <div class="blog">
+      <div>
+        <p class="muted">Kitob va san'at haqidagi blog. 97 ta post, 20 mingdan ortiq obunachi, Anvar Obidjon va Jontemir she'rlari asosidagi Reels. Auditoriyani noldan yig'ish tajribasi mijoz akkauntiga ham ishlaydi.</p>
+        <ul class="ticks">
+          <li>Kameraga erkin gapirish va o'z ovozida hikoya qilish</li>
+          <li>Matn, ssenariy va subtitr bilan ishlash</li>
+          <li>Har bir Reels uchun alohida vizual uslub</li>
+        </ul>
+        <p style="margin-top:26px"><a class="link" href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener">Blogni ochish ↗</a></p>
+      </div>
+      <div class="thumbs four">
+        <a href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener"><img src="img/w6.webp" alt="Kameraga gapirayotgan Reels" loading="lazy"></a>
+        <a href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener"><img src="img/w7.webp" alt="Jontemir she'ri asosidagi Reels" loading="lazy"></a>
+        <a href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener"><img src="img/w8.webp" alt="Anvar Obidjon g'azali Reels" loading="lazy"></a>
+        <a href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener"><img src="img/w9.webp" alt="Anvar Obidjon g'azali, ikkinchi Reels" loading="lazy"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fanlar" style="--h:1">
+  <div class="wrap">
+    <div class="case-head">
+      <div>
+        <h2>O'zbekiston Fanlar akademiyasi</h2>
+        <p class="muted">Rasmiy, tasdiqlangan davlat akkaunti uchun kontent: haftalik yangiliklar anonslari, olimlar bilan suhbatlar, ilmiy faktlar haqidagi Reels. Rasmiy tashkilot bilan ishlash tartibi va talablarini bilaman.</p>
+      </div>
+      <a class="link" href="https://www.instagram.com/fanlar_akademiyasi/" target="_blank" rel="noopener">Sahifani ochish ↗</a>
+    </div>
+    <div class="case-grid">
+      <div class="thumbs">
+        <a href="https://www.instagram.com/fanlar_akademiyasi/" target="_blank" rel="noopener"><img src="img/w11.webp" alt="Amudaryo haqidagi ilmiy Reels" loading="lazy"></a>
+        <a href="https://www.instagram.com/fanlar_akademiyasi/" target="_blank" rel="noopener"><img src="img/w12.webp" alt="Ilm-fan tanlovi e'loni" loading="lazy"></a>
+        <a href="https://www.instagram.com/fanlar_akademiyasi/" target="_blank" rel="noopener"><img src="img/w13.webp" alt="Olima bilan suhbat" loading="lazy"></a>
+      </div>
+      <div>
+        <div class="shot"><img src="img/fanlar-profil.webp" alt="fanlar_akademiyasi Instagram sahifasi: 197 post, 2 716 obunachi" loading="lazy"></div>
+        <div class="stats" style="grid-template-columns:1fr 1fr;margin:16px 0 0">
+          <div class="stat"><b>197</b><span>post</span></div>
+          <div class="stat"><b>2 716</b><span>obunachi</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="xizmatlar" style="--h:1">
+  <div class="wrap">
+    <h2>Xizmatlar</h2>
+    <p class="muted" style="margin-bottom:34px">Alohida xizmat yoki hammasi bitta oylik paketda. Narx hajmga qarab kelishiladi.</p>
+    <div class="cards">
+      <div class="card"><span class="n">01</span><h3>Kontent reja va ssenariy</h3><p>Biznesingiz, mijozingiz va raqobatchilaringizni o'rganib, bir oylik Reels rejasi va har biriga ssenariy.</p></div>
+      <div class="card"><span class="n">02</span><h3>Suratga olish</h3><p>Do'kon, ofis yoki ishlab chiqarishda vertikal 9:16 formatda suratga olish, intervyu va ko'cha so'rovlari.</p></div>
+      <div class="card"><span class="n">03</span><h3>Kadrda boshlovchi</h3><p>Brendingiz nomidan kameraga gapiraman, sotuvchi va mijozlar bilan intervyu olaman.</p></div>
+      <div class="card"><span class="n">04</span><h3>Montaj</h3><p>Dinamik montaj, subtitr, musiqa va brend ranglari. Har bir Reels 30-60 soniya.</p></div>
+      <div class="card"><span class="n">05</span><h3>Akkaunt yuritish</h3><p>Joylash jadvali, matnlar, hashteglar va sahifa ko'rinishi bir uslubda.</p></div>
+      <div class="card"><span class="n">06</span><h3>Oylik hisobot</h3><p>Obunachi, ko'rish va qamrov o'sishi, qaysi Reels ishladi va keyingi oy rejasi.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="jarayon" style="--h:1">
+  <div class="wrap">
+    <h2>Ish jarayoni</h2>
+    <p class="muted" style="margin-bottom:44px">Birinchi Reels odatda boshlangandan keyin bir hafta ichida chiqadi.</p>
+    <ol class="steps">
+      <li><h3>Tanishuv</h3><p>Biznes, mahsulot va maqsadni bilib olaman, akkauntni tahlil qilaman.</p></li>
+      <li><h3>Reja</h3><p>Bir oylik kontent reja va ssenariylarni siz bilan kelishamiz.</p></li>
+      <li><h3>Suratga olish</h3><p>Bir yoki ikki kunda oylik materialni olamiz.</p></li>
+      <li><h3>Montaj va joylash</h3><p>Reels tayyorlanadi, tasdiqlaysiz va jadval bo'yicha chiqadi.</p></li>
+      <li><h3>Hisobot</h3><p>Oy oxirida raqamlar va keyingi oy uchun tuzatishlar.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="haqida" style="--h:1">
+  <div class="wrap about">
+    <div class="portrait"><img src="img/jasur-portret.webp" alt="Jasur Ismoilov" loading="lazy"></div>
+    <div>
+      <h2>Jasur Ismoilov haqida</h2>
+      <p>24 yosh, Toshkent. Kontentmaker va kitob blogeri. TASMA Production jamoasida savdo majmuasi, davlat tashkiloti va shaxsiy brendlar uchun Reels qilaman.</p>
+      <p class="muted">Kadr ortida ham, kadr oldida ham ishlayman: g'oyani topaman, ssenariyni yozaman, kameraga gapiraman va montajni o'zim yig'aman. Shuning uchun bitta odam bilan kelishasiz va natija uchun bitta odam javob beradi.</p>
+      <div class="actions" style="margin-top:30px">
+        <a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aloqa" class="band" style="--h:1">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <h2>Akkauntingiz uchun kontent reja</h2>
+        <p class="muted" style="margin-top:18px">Biznesingiz haqida Telegramda yozing. Akkauntni ko'rib chiqib, birinchi oy uchun g'oyalar va narxni aytaman.</p>
+        <div class="actions" style="margin-top:30px">
+          <a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a>
+        </div>
+      </div>
+      <div class="clist">
+        <a href="https://t.me/telbamishkin" target="_blank" rel="noopener"><span>Telegram: @telbamishkin</span><span>↗</span></a>
+        <a href="https://ig.me/m/ismoiliy_" target="_blank" rel="noopener"><span>Instagram: @ismoiliy_</span><span>↗</span></a>
+
+        <a href="#bosh"><span>Toshkent</span><span>↑</span></a>
+      </div>
+    </div>
+    <div class="foot"><span>© 2026 Jasur Ismoilov</span><span>Ishlar Instagram sahifalaridan olingan</span></div>
+  </div>
+</section>
+
+</main>
+
+<div class="bar"><a class="btn btn-p" href="https://t.me/telbamishkin" target="_blank" rel="noopener">Kontent buyurtma qilish</a></div>
+
+<script>
+(function(){
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var el=document.getElementById('bignum'), sec=document.getElementById('blog');
+  function f(){var r=sec.getBoundingClientRect(),vh=innerHeight;var p=Math.min(1,Math.max(0,(vh-r.top)/(vh*0.9)));el.style.setProperty('--s',(0.8+0.2*p).toFixed(3));}
+  addEventListener('scroll',f,{passive:true}); f();
+})();
+</script>
+</body>
+</html>
