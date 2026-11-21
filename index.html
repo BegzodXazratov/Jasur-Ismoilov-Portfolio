@@ -82,34 +82,24 @@ a{color:inherit;text-decoration:none}
 .head a:hover{color:#fff}
 
 .works{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.work{position:relative;aspect-ratio:4/3.3;border-radius:var(--r);overflow:hidden;border:1px solid var(--line2);background:#0d0e10;display:block}
-.work img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(.35) brightness(.62) contrast(1.05);transition:transform .6s,filter .4s}
-.work:hover img{transform:scale(1.03);filter:grayscale(.1) brightness(.72)}
-.work::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,11,13,.92) 0%,rgba(10,11,13,.55) 55%,rgba(10,11,13,.15) 100%)}
-.work .in{position:absolute;inset:0;z-index:2;padding:26px;display:flex;flex-direction:column;justify-content:flex-end}
-.work .top{position:absolute;top:22px;left:26px;right:26px;display:flex;justify-content:space-between}
-.work h3{font-family:Inter;font-weight:500;font-size:clamp(1.5rem,2.2vw,2rem);line-height:1.1;letter-spacing:-.02em;margin-bottom:16px}
-.work .tags{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#B5B9BF;line-height:1.9}
-.circ{position:absolute;right:22px;bottom:22px;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.55);display:grid;place-items:center;transition:background .25s,color .25s}
+.work{display:block;border-radius:var(--r);border:1px solid var(--line);background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));padding:10px;transition:transform .25s,border-color .25s}
+.work:hover{transform:translateY(-2px);border-color:var(--line2)}
+.work .shot{border-radius:9px;overflow:hidden;aspect-ratio:1100/749;background:#000}
+.work .shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s}
+.work:hover .shot img{transform:scale(1.03)}
+.work .meta{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:18px 8px 8px}
+.work h3{font-weight:500;font-size:1.08rem;letter-spacing:-.01em;margin-bottom:4px}
+.work .meta span.label{font-size:.66rem}
+.circ{width:38px;height:38px;border-radius:50%;border:1px solid var(--line2);display:grid;place-items:center;flex:none;transition:background .25s,color .25s}
 .work:hover .circ{background:#fff;color:#111}
 .num{font-family:var(--disp);font-size:1.6rem;line-height:1}
 
-.two{display:grid;grid-template-columns:1.12fr .88fr;gap:28px;margin-top:58px}
-.caps h2,.side h2{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--line);font-weight:500}
-.capgrid{display:grid;grid-template-columns:1fr 1fr;gap:30px 34px;padding-right:28px;border-right:1px solid var(--line)}
-.cap{display:grid;grid-template-columns:40px 1fr;gap:14px}
-.cap svg{width:30px;height:30px;color:#D7DADF}
-.cap h3{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
-.cap p{font-size:.86rem;color:var(--muted);line-height:1.5}
-.side .panel{padding:8px 18px}
-.row{display:flex;align-items:center;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
-.row:last-child{border-bottom:0}
-.ico{width:38px;height:38px;border-radius:8px;border:1px solid var(--line2);display:grid;place-items:center;flex:none;font-family:var(--disp);font-size:1rem;background:rgba(255,255,255,.04)}
-.row b{display:block;font-weight:500;font-size:.92rem}
-.row span{font-size:.8rem;color:var(--muted)}
-.fmts{display:flex;flex-wrap:wrap;gap:8px;padding:16px 0}
-.fmts li{list-style:none;border:1px solid var(--line2);border-radius:999px;padding:7px 14px;font-size:.8rem;color:#CDD0D4;background:rgba(255,255,255,.03)}
-
+.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:58px}
+.two h2{font-weight:500;margin-bottom:6px;color:#D7DADF}
+.list{list-style:none}
+.list li{display:flex;align-items:center;gap:18px;padding:16px 4px;border-bottom:1px solid var(--line);font-size:1rem;color:#E4E6E9}
+.list li i{font-style:normal;color:var(--dim);font-size:.78rem;width:22px}
+.list li small{margin-left:auto;color:var(--muted);font-size:.82rem}
 .steps{display:grid;grid-template-columns:repeat(5,1fr);padding:26px 10px}
 .step{padding:0 18px;position:relative}
 .step+.step::before{content:"";position:absolute;left:-14px;top:9px;width:28px;border-top:1px dashed rgba(255,255,255,.3)}
@@ -153,7 +143,6 @@ footer .soc svg{width:16px;height:16px}
   .stat:nth-child(3)::before{display:none}
   .works{grid-template-columns:1fr 1fr}
   .two{grid-template-columns:1fr}
-  .capgrid{border-right:0;padding-right:0}
   .steps{grid-template-columns:1fr 1fr 1fr;row-gap:26px}
   .step+.step::before{display:none}
   .cta{grid-template-columns:1fr 1fr}
@@ -176,7 +165,6 @@ footer .soc svg{width:16px;height:16px}
   .stat{padding:26px 10px}
   .stat b{font-size:2rem}
   .works{grid-template-columns:1fr}
-  .capgrid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr}
   .step{padding:0 8px}
   .cta{grid-template-columns:1fr;padding:28px 22px}
@@ -256,56 +244,37 @@ footer .soc svg{width:16px;height:16px}
     <div class="head"><h2 class="label" style="color:#D7DADF">Tanlangan ishlar</h2><a class="label" href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener">Barcha ishlar Instagramda <svg class="arr"><use href="#i-arr"/></svg></a></div>
     <div class="works">
       <a class="work" href="https://www.instagram.com/qoyliq_universalsavdo/" target="_blank" rel="noopener">
-        <img src="img/w5.webp" alt="" loading="lazy">
-        <div class="in">
-          <div class="top"><span class="label">Savdo majmuasi</span><span class="num silver">01</span></div>
-          <h3>Qo'yliq<br>savdo majmuasi</h3>
-          <div class="tags">3 161 obunachi · 2,5 oy<br>Intervyu · Kadrda boshlovchi</div>
-        </div>
-        <span class="circ" aria-hidden="true"><svg class="arr" style="width:16px;height:16px"><use href="#i-arr"/></svg></span>
+        <div class="shot"><img src="img/akk-qoyliq.webp" alt="qoyliq_universalsavdo Instagram sahifasi" loading="lazy"></div>
+        <div class="meta"><div><h3>Qo'yliq savdo majmuasi</h3><span class="label">3 161 obunachi · 2,5 oy</span></div><span class="circ" aria-hidden="true"><svg class="arr"><use href="#i-arr"/></svg></span></div>
       </a>
       <a class="work" href="https://www.instagram.com/ismoiliy_/" target="_blank" rel="noopener">
-        <img src="img/w6.webp" alt="" loading="lazy">
-        <div class="in">
-          <div class="top"><span class="label">Shaxsiy brend</span><span class="num silver">02</span></div>
-          <h3>Kitob blogi<br>ismoiliy_</h3>
-          <div class="tags">20.2K obunachi · 97 post<br>Hikoya · She'r · Kitob</div>
-        </div>
-        <span class="circ" aria-hidden="true"><svg class="arr" style="width:16px;height:16px"><use href="#i-arr"/></svg></span>
+        <div class="shot"><img src="img/akk-ismoiliy.webp" alt="ismoiliy_ Instagram sahifasi" loading="lazy"></div>
+        <div class="meta"><div><h3>Shaxsiy blog · ismoiliy_</h3><span class="label">20.2K obunachi · 97 post</span></div><span class="circ" aria-hidden="true"><svg class="arr"><use href="#i-arr"/></svg></span></div>
       </a>
       <a class="work" href="https://www.instagram.com/fanlar_akademiyasi/" target="_blank" rel="noopener">
-        <img src="img/w11.webp" alt="" loading="lazy">
-        <div class="in">
-          <div class="top"><span class="label">Davlat tashkiloti</span><span class="num silver">03</span></div>
-          <h3>O'zbekiston<br>Fanlar akademiyasi</h3>
-          <div class="tags">Rasmiy akkaunt · 197 post<br>Anons · Suhbat · Ilmiy fakt</div>
-        </div>
-        <span class="circ" aria-hidden="true"><svg class="arr" style="width:16px;height:16px"><use href="#i-arr"/></svg></span>
+        <div class="shot"><img src="img/akk-fanlar.webp" alt="fanlar_akademiyasi Instagram sahifasi" loading="lazy"></div>
+        <div class="meta"><div><h3>O'zbekiston Fanlar akademiyasi</h3><span class="label">Rasmiy akkaunt · 197 post</span></div><span class="circ" aria-hidden="true"><svg class="arr"><use href="#i-arr"/></svg></span></div>
       </a>
     </div>
   </section>
 
   <section id="xizmatlar" class="two reveal">
-    <div class="caps">
-      <h2 class="label" style="color:#D7DADF">Xizmatlar</h2>
-      <div class="capgrid">
-        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z"/></svg><div><h3>G'oya va ssenariy</h3><p>Biznesingizga mos oylik kontent reja va har bir Reels uchun ssenariy.</p></div></div>
-        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg><div><h3>Suratga olish</h3><p>Do'kon, ofis yoki ko'chada vertikal 9:16 formatda suratga olish.</p></div></div>
-        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg><div><h3>Kadrda boshlovchi</h3><p>Brend nomidan kameraga gapiraman, sotuvchi va mijozlardan intervyu olaman.</p></div></div>
-        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg><div><h3>Montaj</h3><p>Dinamik montaj, subtitr, musiqa va brend uslubi. 30-60 soniya.</p></div></div>
-        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><div><h3>Akkaunt yuritish</h3><p>Joylash jadvali, matnlar va sahifaning yagona ko'rinishi.</p></div></div>
-        <div class="cap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><h3>Oylik hisobot</h3><p>Obunachi va qamrov o'sishi, qaysi Reels ishlagani.</p></div></div>
-      </div>
+    <div>
+      <h2 class="label">Xizmatlar</h2>
+      <ul class="list">
+        <li><i>01</i>G'oya va ssenariy</li>
+        <li><i>02</i>Suratga olish</li>
+        <li><i>03</i>Kadrda boshlovchi</li>
+        <li><i>04</i>Montaj</li>
+        <li><i>05</i>Akkaunt yuritish</li>
+      </ul>
     </div>
-    <div class="side">
-      <h2 class="label" style="color:#D7DADF">Hamkorlik</h2>
-      <div class="panel">
-        <div class="row"><span class="ico">Q</span><div><b>Qo'yliq universal savdo majmuasi</b><span>Instagram sahifasi · Toshkent</span></div></div>
-        <div class="row"><span class="ico">FA</span><div><b>O'zbekiston Fanlar akademiyasi</b><span>Rasmiy Instagram akkaunti</span></div></div>
-        <div class="row"><span class="ico">T</span><div><b>TASMA Production</b><span>Kontentmakerlar jamoasi</span></div></div>
-      </div>
-      <h2 class="label" style="color:#D7DADF;margin-top:26px;border:0;padding:0;margin-bottom:0">Formatlar</h2>
-      <ul class="fmts"><li>Reels 9:16</li><li>Intervyu</li><li>Ko'cha so'rovi</li><li>Hikoya</li><li>Anons</li><li>Ekspert video</li></ul>
+    <div>
+      <h2 class="label">Hamkorlik</h2>
+      <ul class="list">
+        <li><i>01</i>Qo'yliq universal savdo majmuasi<small>Toshkent</small></li>
+        <li><i>02</i>O'zbekiston Fanlar akademiyasi<small>Rasmiy akkaunt</small></li>
+      </ul>
     </div>
   </section>
 
